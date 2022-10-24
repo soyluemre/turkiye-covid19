@@ -24,10 +24,10 @@ const App = () => {
           </h2>
           <input
             type="text"
-            placeholder="GG/AA/YY"
+            placeholder="GG.AA.YY"
             className="form-control"
             onChange={(e) => {
-              setTarih(e.target.value);
+              setTarih(e.target.value.replaceAll(".", "/"));
             }}
           ></input>
           <table className="table table strike text-white">
@@ -42,7 +42,9 @@ const App = () => {
             <tbody>
               <tr className={veri === undefined ? "bg-danger" : "bg-success"}>
                 <th scope="row">
-                  {veri === undefined ? "Veri Bekleniyor" : veri.date}
+                  {veri === undefined
+                    ? "Veri Bekleniyor"
+                    : veri.date.replaceAll("/", ".")}
                 </th>
                 <td>
                   {veri === undefined ? "Veri Bekleniyor" : veri.totalTests}
