@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/turkiye-covid19/static/css/main.a672c12f.css",
+    "main.js": "/turkiye-covid19/static/js/main.2919538c.js",
+    "index.html": "/turkiye-covid19/index.html",
+    "main.a672c12f.css.map": "/turkiye-covid19/static/css/main.a672c12f.css.map",
+    "main.2919538c.js.map": "/turkiye-covid19/static/js/main.2919538c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a672c12f.css",
+    "static/js/main.2919538c.js"
+  ]
+}
